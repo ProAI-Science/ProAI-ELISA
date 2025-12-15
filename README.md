@@ -35,6 +35,34 @@ ProAI-ELISA is an open-source R-based toolkit that automates ELISA (Enzyme-Linke
 
 ---
 
+## 📸 Example Outputs
+
+### Standard Curve Analysis
+
+ProAI-ELISA generates publication-quality standard curves with 4-parameter logistic (4PL) regression:
+
+![Standard Curve Example](images/standard_curve_example.png)
+
+*4PL curve fitting with R² = 0.9998, comparing multiple fit methods (4PL, Linear, Log-log, Semi-log)*
+
+### Sample Concentration Analysis
+
+Automated bar charts show sample concentrations with error bars and individual replicate values:
+
+![Sample Concentrations](images/sample_concentrations_example.png)
+
+*Comprehensive sample analysis with 33 samples, showing mean ± SD and individual data points*
+
+### GraphPad Prism Integration
+
+Seamless export to Prism for final publication-ready figures:
+
+![Prism Graph](images/prism_graph_example.png)
+
+*Data imported into Prism with individual replicates displayed as overlaid points*
+
+---
+
 ## 🚀 Quick Start
 
 ### Prerequisites
@@ -90,10 +118,14 @@ ProAI-ELISA/
 ├── ProAI-ELISA_Prism_Export_v0.3.0.R # Prism export tool
 ├── examples/
 │   └── Synthetic_ELISA_Standard_Format.xlsx  # Example dataset
-└── docs/
-    ├── INSTALLATION.md                # Installation guide
-    ├── USAGE.md                       # Usage guide
-    └── PRISM_IMPORT_GUIDE.md          # Prism import instructions
+├── docs/
+│   ├── INSTALLATION.md                # Installation guide
+│   ├── USAGE.md                       # Usage guide
+│   └── PRISM_IMPORT_GUIDE.md          # Prism import instructions
+└── images/
+    ├── standard_curve_example.png     # Example standard curve
+    ├── sample_concentrations_example.png  # Example sample plot
+    └── prism_graph_example.png        # Example Prism output
 ```
 
 ---
